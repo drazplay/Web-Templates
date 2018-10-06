@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>Arisan LM</title>
+</head>
+<body id="dashboard">
+  <!--/////////////////////////// Offcanvas Content ////////////////////////////////////////-->
+  <div id="offcanvas-content" class="uk-offcanvas-content">
+
+    <!--/////////////////////////// Left Sidebar ////////////////////////////////////////-->
+    <aside id="left-sidebar" class="">
+
+      <header id="left-sidebar-header" class="">
+        <div class="uk-background-secondary uk-light" uk-sticky>
+          <div uk-navbar>
+            <a class="uk-navbar-item uk-logo" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="40" height="40" uk-svg> Member Area</a>
+          </div>
+        </div>
+      </header>
+
+      <div id="left-sidebar-content">
+        <nav class="uk-light">
+          <ul class="uk-nav uk-nav-default">
+            <li class="uk-active"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Dashboard</a></li>
+            <li><a href="profile_account.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Profile</a></li>
+            <li><a href="arisan_info.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Arisan</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Transaksi</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <footer id="left-sidebar-footer" class="uk-position-bottom">
+        <nav class="">
+          <ul class="uk-nav-default uk-light" uk-nav>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Back to GMI Club</a></li>
+            <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Sign Out</a></li>
+          </ul>
+        </nav>
+      </footer>
+
+    </aside>
+    <!--/////////////////////////// Left Sidebar End ////////////////////////////////////////-->
+
+    <!--/////////////////////////// Main Page ////////////////////////////////////////-->
+    <main id="main-page" class="uk-section">
+
+      <!--/////////////////////////// Global Navbar ////////////////////////////////////////-->
+      <nav id="global-navbar" class="" uk-sticky="cls-active: global-navbar-active">
+        <div class="uk-navbar-container uk-navbar-transparent">
+          <div class="uk-container">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <a href="#offcanvas-nav" class="uk-navbar-toggle uk-margin-right uk-hidden@m" uk-icon="menu" uk-toggle></a>
+                <div class="uk-navbar-item uk-visible@m">
+                  <div id="page-title-big" class="">Dashboard</div>
+                </div>
+              </div>
+              <div class="uk-navbar-center uk-hidden@m">
+                <div id="page-title" class="uk-margin-remove">Dashboard</div>
+              </div>
+              <div class="uk-navbar-right">
+                <ul class="uk-navbar-nav">
+                  <li>
+                    <a href="#">
+                      <div class="uk-inline uk-light">
+                        <div class="uk-avatar uk-background-secondary">
+                          DJ
+                        </div>
+                        <div class="uk-position-center">
+                          <div data-src="assets/images/avatar2.jpg" style="width:32px; height:32px" class="uk-background-cover uk-border-circle" uk-img></div>
+                        </div>
+                      </div>
+                      <div class="uk-margin-small-left uk-visible@m">
+                        <span>Dini Jurwati</span>
+                        <span uk-icon="icon: chevron-down"></span>
+                      </div>
+                    </a>
+
+                    <!--/////////////////////////// User Dropdown ////////////////////////////////////////-->
+                    <div uk-dropdown="" class="uk-width-medium">
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-auto">
+                          <div class="uk-inline uk-light">
+                            <div class="uk-avatar uk-avatar-medium uk-background-secondary">
+                              DJ
+                            </div>
+                            <div class="uk-position-center">
+                              <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="uk-width-expand">
+                          <p class="uk-margin-remove-bottom">Dini Jurwati Budi Rahayu</p>
+                          <p class="uk-text-meta uk-margin-remove-top">#12345, Bandung</p>
+                        </div>
+                      </div>
+                      <hr class="uk-hr uk-margin-small-top uk-margin-small-bottom">
+                      <ul class="uk-nav uk-dropdown-nav">
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Edit Profile</a></li>
+                        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Sign Out</a></li>
+                      </ul>
+                    </div>
+                    <!--/////////////////////////// User Dropdown End ////////////////////////////////////////-->
+
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!--/////////////////////////// Global Navbar End ////////////////////////////////////////-->
+
+
+<!--/////////////////////////// Section 1 ////////////////////////////////////////-->
+<section id="main-page-section-one" class="uk-section uk-section-small">
+  <div class="uk-container">
+    <div class="uk-grid-small uk-flex-top" uk-grid>
+      <div class="uk-width-2-3@m">
+        <div class="uk-grid-small uk-flex-middle" uk-grid>
+          <div class="uk-width-auto">
+            <div class="uk-inline uk-light">
+              <div class="uk-avatar uk-avatar-large uk-background-secondary">
+                DJ
+              </div>
+              <div class="uk-position-center">
+                <div data-src="assets/images/avatar2.jpg" style="width:64px; height:64px" class="uk-background-cover uk-border-circle" uk-img></div>
+              </div>
+            </div>
+          </div>
+          <div class="uk-width-expand">
+            <h4 class="uk-margin-remove uk-text-medium">Dini Jurwati Budi Rahayu</h4>
+            <p class="uk-margin-remove">#12345, Bandung</p>
+          </div>
+        </div>
+        <div class="uk-margin">
+          <div class="uk-label uk-background-secondary">
+            Profile Completed<span class="uk-icon uk-margin-small-left" uk-icon="check"></span>
+          </div>
+          <a href="" class="uk-button uk-button-small uk-button-default uk-margin-small-left">
+            Edit
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--/////////////////////////// Section 1 End ////////////////////////////////////////-->
+
+
+
+
+<!--/////////////////////////// Section 2 ////////////////////////////////////////-->
+<section id="main-page-section-2" class="uk-section uk-section-small">
+  <div class="uk-container">
+    <h5 class="uk-text-bold">Summary Overview</h5>
+    <div class="uk-grid-small uk-child-width-1-2 uk-child-width-1-3@m" uk-grid>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="users"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Referral</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="cart"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Tagihan</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="heart"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Bonus</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="credit-card"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Kontrak</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="bell"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Notification</p>
+          </div>
+        </a>
+      </div>
+      <div>
+        <a class="uk-link-reset" href="home.html">
+          <div class="uk-card uk-card-small uk-card-default uk-card-body uk-card-hover">
+            <span class="uk-margin-bottom" uk-icon="warning"></span>
+            <h5 class="uk-text-bold uk-margin-remove">Rp. 3.298.000</h5>
+            <p class="uk-text-meta uk-margin-remove">Other</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--/////////////////////////// Section 2 End ////////////////////////////////////////-->
+
+<!--/////////////////////////// Section 3 ////////////////////////////////////////-->
+<section id="main-page-section-3" class="uk-section uk-section-xsmall">
+  <div class="uk-container">
+    <div class="uk-grid-small" uk-grid>
+      <div class="uk-width-1-1">
+        <div id="update-harga-lm-slider" uk-slider="center: false; finite: true">
+          <div class="uk-position-relative uk-visible-toggle">
+            <div class="uk-clearfix uk-margin-small-bottom">
+              <div class="uk-float-left">
+                <h5 class="uk-margin-remove-bottom uk-text-bold">Update Harga LM</h5>
+                <p class="uk-text-meta uk-margin-remove">Sun, 02 Oct 2018</p>
+              </div>
+              <div class="uk-float-right">
+                  <a href="" class="uk-icon-button" uk-icon="chevron-left" uk-slider-item="previous"></a>
+                  <a href="" class="uk-icon-button" uk-icon="chevron-right" uk-slider-item="next"></a>
+              </div>
+            </div>
+            <ul class="uk-slider-items uk-grid-small uk-child-width-1-1 uk-child-width-1-3@s uk-child-width-1-5@m" uk-grid>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img src="assets/images/icons/gram_5.svg" width="30" height="48" uk-svg>
+                    </div>
+                    <div class="uk-width-expand">
+                      <h5 class="uk-margin-remove">Rp. 600.000</h5>
+                      <p class="uk-text-meta uk-margin-remove">/gram</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img src="assets/images/icons/gram_5.svg" width="30" height="48" uk-svg>
+                    </div>
+                    <div class="uk-width-expand">
+                      <h5 class="uk-margin-remove">Rp. 600.000</h5>
+                      <p class="uk-text-meta uk-margin-remove">/gram</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img src="assets/images/icons/gram_5.svg" width="30" height="48" uk-svg>
+                    </div>
+                    <div class="uk-width-expand">
+                      <h5 class="uk-margin-remove">Rp. 600.000</h5>
+                      <p class="uk-text-meta uk-margin-remove">/gram</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img src="assets/images/icons/gram_5.svg" width="30" height="48" uk-svg>
+                    </div>
+                    <div class="uk-width-expand">
+                      <h5 class="uk-margin-remove">Rp. 600.000</h5>
+                      <p class="uk-text-meta uk-margin-remove">/gram</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <img src="assets/images/icons/gram_5.svg" width="30" height="48" uk-svg>
+                    </div>
+                    <div class="uk-width-expand">
+                      <h5 class="uk-margin-remove">Rp. 600.000</h5>
+                      <p class="uk-text-meta uk-margin-remove">/gram</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--/////////////////////////// Section 3 End ////////////////////////////////////////-->
+
+<!--/////////////////////////// Section 4 ////////////////////////////////////////-->
+<section id="main-page-section-3" class="uk-section uk-section-xsmall">
+  <div class="uk-container">
+        <h5 class="uk-margin-remove-bottom uk-text-bold">Uplines</h5>
+        <ul class="uk-grid-small uk-child-width-1-2@m" uk-grid>
+          <li>
+            <p class="uk-text-meta uk-margin-small-bottom uk-margin-remove-top">Referrer</p>
+            <div class="uk-card uk-card-small uk-card-default uk-card-body">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="uk-inline uk-light">
+                    <div style="width:48px; height:48px" class="uk-border-circle uk-background-secondary"></div>
+                    <div class="uk-position-center">
+                      <h4 class="uk-margin-remove">DJ</h4>
+                    </div>
+                    <div class="uk-position-center">
+                      <div data-src="assets/images/avatar2.jpg" style="width:48px; height:48px" class="uk-background-cover uk-border-circle" uk-img></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                  <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li>
+            <p class="uk-text-meta uk-margin-small-bottom uk-margin-remove-top">Referrer</p>
+            <div class="uk-card uk-card-small uk-card-default uk-card-body">
+              <div class="uk-grid-small uk-flex-middle" uk-grid>
+                <div class="uk-width-auto">
+                  <div class="uk-inline uk-light">
+                    <div style="width:48px; height:48px" class="uk-border-circle uk-background-secondary"></div>
+                    <div class="uk-position-center">
+                      <h4 class="uk-margin-remove">DJ</h4>
+                    </div>
+                    <div class="uk-position-center">
+                      <div data-src="assets/images/avatar2.jpg" style="width:48px; height:48px" class="uk-background-cover uk-border-circle" uk-img></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                  <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                </div>
+              </div>
+            </div>
+          </li>
+        </ul>
+  </div>
+</section>
+<!--/////////////////////////// Section 4 End ////////////////////////////////////////-->
+
+<!--/////////////////////////// Section 5 ////////////////////////////////////////-->
+<section id="main-page-section-4" class="uk-section uk-section-xsmall">
+  <div class="uk-container">
+    <h5 class="uk-margin-remove-bottom uk-text-bold">Supports</h5>
+  </div>
+  <div class="uk-container uk-overflow-auto uk-padding-small">
+      <ul class="uk-grid-small uk-child-width-1-1 uk-child-width-1-4@m" uk-grid>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <div class="uk-inline uk-light">
+                        <div style="width:40px; height:40px" class="uk-border-circle uk-background-secondary"></div>
+                        <div class="uk-position-center">
+                          <h5 class="uk-margin-remove">DJ</h5>
+                        </div>
+                        <div class="uk-position-center">
+                          <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                      <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <div class="uk-inline uk-light">
+                        <div style="width:40px; height:40px" class="uk-border-circle uk-background-secondary"></div>
+                        <div class="uk-position-center">
+                          <h5 class="uk-margin-remove">DJ</h5>
+                        </div>
+                        <div class="uk-position-center">
+                          <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                      <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <div class="uk-inline uk-light">
+                        <div style="width:40px; height:40px" class="uk-border-circle uk-background-secondary"></div>
+                        <div class="uk-position-center">
+                          <h5 class="uk-margin-remove">DJ</h5>
+                        </div>
+                        <div class="uk-position-center">
+                          <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                      <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="uk-card uk-card-small uk-card-default uk-card-body">
+                  <div class="uk-grid-small uk-flex-middle" uk-grid>
+                    <div class="uk-width-auto">
+                      <div class="uk-inline uk-light">
+                        <div style="width:40px; height:40px" class="uk-border-circle uk-background-secondary"></div>
+                        <div class="uk-position-center">
+                          <h5 class="uk-margin-remove">DJ</h5>
+                        </div>
+                        <div class="uk-position-center">
+                          <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="uk-width-expand">
+                      <p class="uk-margin-remove-bottom">Konsultasi Arisan LM</p>
+                      <p class="uk-margin-remove-top uk-text-meta">081234567890</p>
+                    </div>
+                  </div>
+                </div>
+              </li>
+            </ul>
+  </div>
+</section>
+<!--/////////////////////////// Section 5 End ////////////////////////////////////////-->
+
+</main>
+<!--/////////////////////////// Main Page End ////////////////////////////////////////-->
+
+<div id="offcanvas-nav" uk-offcanvas="overlay: false">
+  <div class="uk-offcanvas-bar uk-background-secondary">
+    <a class="uk-offcanvas-close" uk-close></a>
+    <a class="uk-link-reset" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg>GMI Club</a>
+    <ul class="uk-nav uk-nav-default uk-margin-top">
+      <li class="uk-active"><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Dashboard</a></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Profile</a></li>
+      <li><a href="arisan_info.html"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Arisan</a></li>
+      <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Transaksi</a></li>
+    </ul>
+    <div class="uk-position-bottom" style="padding: 20px">
+      <ul class="uk-nav uk-nav-default">
+        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Back to GMI Club</a></li>
+        <li><a href="#"><span class="uk-margin-small-right" uk-icon="icon: thumbnails"></span> Sign Out</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+</div>
+<!--/////////////////////////// Offcanvas Content End ////////////////////////////////////////-->
+
+</body>
+
+</html>

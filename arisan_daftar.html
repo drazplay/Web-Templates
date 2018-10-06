@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>Arisan LM - Daftar</title>
+</head>
+<body>
+    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
+    <nav id="top-nav" uk-sticky>
+      <div class="uk-navbar-container uk-navbar-transparent uk-light">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <a href="index.html" class="uk-navbar-toggle" uk-icon="icon:arrow-left; ratio:1.5" uk-toggle></a>
+            </div>
+            <div class="uk-navbar-center">
+              <div id="page-title" class="uk-margin-remove">Daftar Arisan</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+
+    <main id="main-content" class="">
+      <div class="uk-container uk-padding-remove">
+        <form class="uk-form-controls" action="#modal-review">
+          <fieldset class="uk-fieldset">
+            <div class="uk-margin">
+              <div class="uk-card uk-card-small uk-card-body uk-card-default uk-box-shadow-xsmall uk-padding">
+                <h5 class="uk-margin-small-top">1. Pilih Gramasi</h5>
+                <div class="uk-grid-collapse uk-child-width-1-5 uk-text-center uk-margin-small-bottom" uk-grid>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_gram" id="book-gram-5" checked>
+                    <label for="book-gram-5">
+                      <div class="uk-icon-gram">
+                        <div class="uk-icon-gram-badge">
+                          <img src="assets/images/icons/badge_lm.svg" width="8" height="8" alt="5gram" uk-svg>
+                        </div>
+                        <div class="uk-icon-gram-number">5</div>
+                        <div class="uk-icon-gram-label">gram</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_gram" id="book-gram-10">
+                    <label for="book-gram-10">
+                      <div class="uk-icon-gram">
+                        <div class="uk-icon-gram-badge">
+                          <img src="assets/images/icons/badge_lm.svg" width="8" height="8" alt="5gram" uk-svg>
+                        </div>
+                        <div class="uk-icon-gram-number">10</div>
+                        <div class="uk-icon-gram-label">gram</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_gram" id="book-gram-25">
+                    <label for="book-gram-25">
+                      <div class="uk-icon-gram">
+                        <div class="uk-icon-gram-badge">
+                          <img src="assets/images/icons/badge_lm.svg" width="8" height="8" alt="5gram" uk-svg>
+                        </div>
+                        <div class="uk-icon-gram-number">25</div>
+                        <div class="uk-icon-gram-label">gram</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_gram" id="book-gram-50">
+                    <label for="book-gram-50">
+                      <div class="uk-icon-gram">
+                        <div class="uk-icon-gram-badge">
+                          <img src="assets/images/icons/badge_lm.svg" width="8" height="8" alt="5gram" uk-svg>
+                        </div>
+                        <div class="uk-icon-gram-number">50</div>
+                        <div class="uk-icon-gram-label">gram</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_gram" id="book-gram-100">
+                    <label for="book-gram-100">
+                      <div class="uk-icon-gram">
+                        <div class="uk-icon-gram-badge">
+                          <img src="assets/images/icons/badge_lm.svg" width="8" height="8" alt="5gram" uk-svg>
+                        </div>
+                        <div class="uk-icon-gram-number">100</div>
+                        <div class="uk-icon-gram-label">gram</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="">
+              <div class="uk-card uk-card-small uk-card-body uk-card-default uk-box-shadow-xsmall">
+                <h5 class="uk-margin-small-top">2. Pilih Periode</h5>
+                <div class="uk-grid-collapse uk-child-width-1-5 uk-text-center uk-margin-small-bottom" uk-grid>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_periode" id="periode-1" checked>
+                    <label for="periode-1">
+                      <div class="uk-icon-date">
+                        <div class="uk-icon-date-month">Oct</div>
+                        <div class="uk-icon-date-year">2018</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_periode" id="periode-2">
+                    <label for="periode-2">
+                      <div class="uk-icon-date">
+                        <div class="uk-icon-date-month">Nov</div>
+                        <div class="uk-icon-date-year">2018</div>
+                      </div>
+                    </label>
+                  </div>
+                  <div class="uk-flex uk-flex-column uk-flex-middle">
+                    <input class="uk-radio uk-margin-small-top uk-flex-last" type="radio" name="radio_periode" id="periode-3">
+                    <label for="periode-3">
+                      <div class="uk-icon-date">
+                        <div class="uk-icon-date-month">Dec</div>
+                        <div class="uk-icon-date-year">2018</div>
+                      </div>
+                    </label>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="uk-padding-small">
+              <label class="uk-text-small">
+                <input class="uk-checkbox uk-margin-small-right" required="" type="checkbox" checked>Saya setuju dengan <a href="syarat_ketentuan.html" class="uk-link"> Syarat dan Ketentuan.</a>
+              </label>
+            </div>
+            <div class="uk-padding-small">
+              <button type="submit" class="uk-button uk-button-primary uk-border-pill uk-width-1-1" uk-toggle="target: #modal-review">Daftar</button>
+            </div>
+          </fieldset>
+
+        </form>
+
+      </div>
+
+
+      <!--/////////////////////////// Review Modal ////////////////////////////////////////-->
+      <div id="modal-review" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
+          <h4 class="uk-modal-title">Review</h4>
+          <p class="uk-margin-small-bottom">Anda mendaftar di Arisan LM</p>
+          <p class="uk-text-medium uk-margin-remove">5 gram</p>
+          <p class="uk-text-medium uk-margin-remove">Periode Oktober 2018</p>
+          <div class="uk-margin-medium-top">
+            <div class="uk-grid-small uk-child-width-1-2" uk-grid>
+              <div class="">
+                <button class="uk-button uk-button-default uk-width-1-1 uk-modal-close" type="button">Cancel</button>
+              </div>
+              <div class="">
+                <a href="arisan_status.html" class="uk-button uk-button-primary uk-width-1-1" type="button">Lanjut</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--/////////////////////////// Review Modal Ends ////////////////////////////////////////-->
+
+    </main>
+
+</body>
+</html>

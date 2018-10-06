@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>Transaksi - Pembayaran</title>
+</head>
+<body>
+  <!-- <div class="uk-offcanvas-content"> -->
+    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
+    <nav id="top-nav" uk-sticky>
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <!-- <a href="#offcanvas-nav" class="uk-navbar-toggle uk-margin-right" uk-icon="menu" uk-toggle></a> -->
+              <a class="uk-navbar-item uk-link-reset" href="https://gmiclub.com"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg></a>
+            </div>
+            <div class="uk-navbar-center">
+              <div id="page-title" class="uk-margin-remove">Transaksi</div>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#">
+                    <div class="uk-inline">
+                      <div class="uk-avatar uk-background-default">
+                        DJ
+                      </div>
+                      <div class="uk-position-center">
+                        <div data-src="assets/images/avatar2.jpg" style="width:32px; height:32px" class="uk-background-cover uk-border-circle" uk-img></div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!--/////////////////////////// User Dropdown ////////////////////////////////////////-->
+                  <div uk-dropdown="" class="uk-width-medium">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                      <div class="uk-width-auto">
+                        <div class="uk-inline">
+                          <div class="uk-avatar uk-avatar-medium uk-label-active">
+                            DJ
+                          </div>
+                          <div class="uk-position-center">
+                            <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand">
+                        <p class="uk-margin-remove-bottom">Dini Jurwati Budi Rahayu</p>
+                        <p class="uk-text-meta uk-margin-remove-top">#12345, Bandung</p>
+                      </div>
+                    </div>
+                    <hr class="uk-hr uk-margin-small-top uk-margin-small-bottom">
+                    <ul class="uk-nav uk-dropdown-nav">
+                      <li><a href="profile_account.html"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Edit Profile</a></li>
+                      <li><a href="sign_in.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Sign Out</a></li>
+                    </ul>
+                  </div>
+                  <!--/////////////////////////// User Dropdown End ////////////////////////////////////////-->
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="local-tabs" class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-light">
+            <li><a href="transaksi_tagihan.html">Tagihan</a></li>
+            <li class="uk-active"><a href="#">Pembayaran</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+
+
+    <main id="main-content">
+      <div class="uk-container uk-padding-remove">
+        <div class="uk-section uk-section-xlarge uk-padding-remove-top">
+          <ul id="hover-list" class="uk-list uk-margin-remove">
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                      <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                      <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-closed uk-margin-remove">Validating</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-closed uk-margin-remove">Validating</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-active uk-margin-remove">Approved</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-active uk-margin-remove">Approved</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-active uk-margin-remove">Approved</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-active uk-margin-remove">Approved</p>
+                  </div>
+              </div>
+            </li>
+            <li uk-toggle="target: #modal-invoice">
+              <div class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
+                <div class="uk-grid-small uk-child-width-1-2 uk-flex uk-flex-between" uk-grid>
+                  <div class="">
+                    <p class="uk-margin-remove uk-text-medium">INVOICE #12345</p>
+                    <p class="uk-margin-remove">Rp. 700.000</p>
+                  </div>
+                  <div class="uk-text-right">
+                    <p class="uk-text-small uk-margin-remove">20 Jul 2018</p>
+                    <p class="uk-label-small uk-label-active uk-margin-remove">Approved</p>
+                  </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+
+      <!-- ///////////MODAL INVOICE -->
+      <div id="modal-invoice" class="uk-flex-top" uk-modal>
+        <div class="uk-modal-dialog uk-width-large uk-margin-auto-vertical">
+            <div class="uk-modal-body" uk-overflow-auto>
+              <div class="uk-grid-small" uk-grid>
+                <div class="uk-width-expand">
+                  <p class="uk-margin-remove-bottom uk-text-medium">Invoice #123456</p>
+                  <p class="uk-text-meta uk-margin-remove">20 Jul 2018</p>
+                </div>
+                <div class="uk-width-auto">
+                  <p class="uk-label-small uk-label-closed">validating</p>
+                </div>
+              </div>
+
+              <div class="uk-margin-top">
+                <p class="uk-margin-remove uk-text-muted">Metode Pembayaran</p>
+                <hr class="uk-margin-small">
+                <p class="uk-margin-remove uk-text-medium">Transfer</p>
+                <div class="uk-grid-collapse uk-text-small" uk-grid>
+                  <div class="uk-width-1-2">
+                    <p class="uk-margin-remove">Bank Tujuan</p>
+                  </div>
+                  <div class="uk-width-expand">
+                    <p class="uk-margin-remove uk-text-medium">BCA</p>
+                  </div>
+                </div>
+                <div class="uk-grid-collapse uk-text-small" uk-grid>
+                  <div class="uk-width-1-2">
+                    <p class="uk-margin-remove">Bank Asal</p>
+                  </div>
+                  <div class="uk-width-expand">
+                    <p class="uk-margin-remove uk-text-medium">BNI</p>
+                  </div>
+                </div>
+                <div class="uk-grid-collapse uk-text-small" uk-grid>
+                  <div class="uk-width-1-2">
+                    <p class="uk-margin-remove">Pemilik Bank Asal</p>
+                  </div>
+                  <div class="uk-width-expand">
+                    <p class="uk-margin-remove uk-text-medium">Mumun Surumun</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-medium-top">
+                <p class="uk-margin-remove uk-text-muted">Rincian Pembayaran</p>
+                <hr class="uk-margin-small">
+                <p class="uk-margin-remove uk-text-medium">Arisan</p>
+
+                <!--/// ITEM -->
+                <ul class="uk-list uk-margin-remove uk-text-small">
+                  <li class="uk-margin-remove-top">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Cicilan Arisan 1/10</p>
+                      </div>
+                      <div class="uk-width-auto">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-expand uk-text-right">
+                        <p class="">600.000</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="uk-margin-remove-top">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Denda Keterlambatan</p>
+                      </div>
+                      <div class="uk-width-auto">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-expand uk-text-right">
+                        <p class="">-</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr class="uk-margin-small">
+
+                <!--/// SUBTOTAL -->
+                <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                  <div class="uk-width-3-5 uk-text-right">
+                    <p class="">Sub Total</p>
+                  </div>
+                  <div class="uk-width-auto">
+                    <p class="">Rp.</p>
+                  </div>
+                  <div class="uk-width-expand uk-text-right">
+                    <p class="">600.000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-top">
+                <p class="uk-margin-remove uk-text-medium">Registrasi</p>
+
+                <!--/// ITEM -->
+                <ul class="uk-list uk-margin-remove uk-text-small">
+                  <li class="uk-margin-remove-top">
+                    <div class="uk-grid-small" uk-grid>
+                      <div class="uk-width-3-5">
+                        <p class="">Cicilan Registrasi 2/5</p>
+                      </div>
+                      <div class="uk-width-auto">
+                        <p class="">Rp.</p>
+                      </div>
+                      <div class="uk-width-expand uk-text-right">
+                        <p class="">100.000</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+
+                <hr class="uk-margin-small">
+
+                <!--/// SUBTOTAL -->
+                <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                  <div class="uk-width-3-5 uk-text-right">
+                    <p class="">Sub Total</p>
+                  </div>
+                  <div class="uk-width-auto">
+                    <p class="">Rp.</p>
+                  </div>
+                  <div class="uk-width-expand uk-text-right">
+                    <p class="">100.000</p>
+                  </div>
+                </div>
+
+                <hr class="uk-margin-small" style="border-width: 2px">
+                <!--/// TOTAL -->
+                <div class="uk-grid-small uk-text-bold uk-text-small" uk-grid>
+                  <div class="uk-width-3-5 uk-text-right">
+                    <p class="">Total</p>
+                  </div>
+                  <div class="uk-width-auto">
+                    <p class="">Rp.</p>
+                  </div>
+                  <div class="uk-width-expand uk-text-right">
+                    <p class="">700.000</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="uk-margin-medium-top">
+                    <button class="uk-button uk-button-primary uk-width-1-1 uk-modal-close" type="button">Close</button>
+              </div>
+            </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!--/////////////////////////// Bottom Navs ////////////////////////////////////////-->
+    <nav id="bottom-nav" class="uk-position-fixed uk-position-bottom">
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-tab-bottom">
+            <li>
+              <a href="index.html">
+                <span class="uk-icon uk-icon-image uk-icon-arisan"></span>
+                <p class="uk-margin-remove">Arisan</p>
+              </a>
+            </li>
+            <li class="uk-active">
+              <a href="#">
+                <span class="uk-icon uk-icon-image uk-icon-transaksi"></span>
+                <p class="uk-margin-remove">Transaksi</p>
+              </a>
+            </li>
+            <li>
+              <a href="profile_account.html">
+                <span class="uk-icon uk-icon-image uk-icon-account"></span>
+                <p class="uk-margin-remove">Account</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/////////////////////////// Bottom Navs Ends ////////////////////////////////////////-->
+
+    <!--/////////////////////////// Offcanvas Navs ////////////////////////////////////////-->
+    <!-- <nav id="offcanvas-nav" uk-offcanvas="overlay: false">
+      <div class="uk-offcanvas-bar">
+        <a class="uk-offcanvas-close" uk-close></a>
+        <div class="uk-text-center" style="line-height: 1">
+          <a class="uk-link-reset" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg>GMI Club</a>
+        </div>
+        <ul class="uk-nav uk-nav-default uk-margin-top">
+          <li class="uk-active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Testimonies</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="sign_in.html">Member Area</a></li>
+        </ul>
+        <hr class="uk-hr">
+        <div class="uk-position-bottom" style="padding: 20px">
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="#">Back to GMI Club</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!--/////////////////////////// Offcanvas Navs Ends ////////////////////////////////////////-->
+
+  </div>
+</body>
+</html>

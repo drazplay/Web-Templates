@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>Konfirmasi Pembayaran</title>
+</head>
+<body>
+    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
+    <nav id="top-nav" uk-sticky>
+      <div class="uk-navbar-container uk-navbar-transparent uk-light">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <a href="transaksi_tagihan.html" class="uk-navbar-toggle" uk-icon="icon:arrow-left; ratio:1.5" uk-toggle></a>
+            </div>
+            <div class="uk-navbar-center">
+              <p id="page-title" class="uk-margin-remove">Konfirmasi&nbsp;Pembayaran</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+
+
+    <main id="main-content">
+      <div class="uk-container uk-padding-remove">
+        <div class="">
+          <div class="uk-card uk-card-small uk-background-default uk-card-body">
+            <div class="">
+              <p class="uk-margin-remove uk-text-medium">Total Pembayaran</p>
+              <p class="uk-margin-remove">Rp. 700.000</p>
+            </div>
+          </div>
+        </div>
+        <div id="payment-tabs" class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top uk-padding-remove">
+          <div class="uk-padding-small">
+            <p class="uk-text-medium uk-margin-remove">1. Pilih Metode Pembayaran</p>
+          </div>
+          <div class="uk-child-width-expand" uk-tab="connect: .switcher-container">
+              <div><a href="#">Transfer</a></div>
+              <div><a href="#">Cash</a></div>
+          </div>
+        </div>
+
+        <div class="uk-switcher switcher-container">
+          <!-- TRANSFER METHOD -->
+          <div class="uk-margin-xlarge-bottom">
+            <form>
+              <fieldset class="uk-fieldset">
+                <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+                  <p class="uk-text-medium uk-margin-remove">2. Pilih Bank Tujuan</p>
+                  <ul class="uk-list uk-list-divider">
+                    <li>
+                      <label>
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                          <div class="uk-width-expand uk-text-small">
+                              <p class="uk-margin-remove-bottom uk-text-medium">BCA</p>
+                              <p class="uk-margin-remove-top uk-text-muted">081234567890</p>
+                          </div>
+                          <div class="uk-width-auto">
+                            <input class="uk-radio" type="radio" name="radio-origin" checked>
+                          </div>
+                      </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                          <div class="uk-width-expand uk-text-small">
+                              <p class="uk-margin-remove-bottom uk-text-medium">BNI</p>
+                              <p class="uk-margin-remove-top uk-text-muted">081234567890</p>
+                          </div>
+                          <div class="uk-width-auto">
+                            <input class="uk-radio" type="radio" name="radio-origin">
+                          </div>
+                      </div>
+                      </label>
+                    </li>
+                    <li>
+                      <label>
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                          <div class="uk-width-expand uk-text-small">
+                              <p class="uk-margin-remove-bottom uk-text-medium">BSM</p>
+                              <p class="uk-margin-remove-top uk-text-muted">081234567890</p>
+                          </div>
+                          <div class="uk-width-auto">
+                            <input class="uk-radio" type="radio" name="radio-origin">
+                          </div>
+                      </div>
+                      </label>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+                  <p class="uk-text-medium">3. Masukan Nama Bank Asal</p>
+                  <input class="uk-input" type="text" placeholder="Nama Bank Asal">
+                </div>
+
+                <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+                  <p class="uk-text-medium">4. Masukan Nama Pemilik Rekening</p>
+                  <input class="uk-input" type="name" placeholder="Nama Pemilik Rekening">
+                </div>
+
+                <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+                  <p class="uk-text-medium uk-margin-remove">5. Upload bukti pembayaran</p>
+                  <div class="js-upload">
+                    <div class="uk-width-1-1" uk-form-custom>
+                        <input type="file">
+                        <div class="uk-placeholder uk-text-center">
+                          <span class="uk-icon uk-text-muted" uk-icon="icon: camera"></span>
+                        </div>
+                    </div>
+                  </div>
+                  <progress id="js-progressbar" class="uk-progress uk-margin-remove" value="0" max="100" hidden></progress>
+                </div>
+
+                <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+                  <p class="uk-text-medium">6. Masukan keterangan tambahan (Optional)</p>
+                  <textarea class="uk-textarea" rows="5" placeholder="Keterangan"></textarea>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+
+          <!-- CASH METHOD -->
+          <div>
+            <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-small-top">
+              <div class="uk-margin">
+                <p class="uk-text-medium">2. Pilih Loket Pembayaran</p>
+                <ul class="uk-list uk-list-divider">
+                  <li>
+                    <label>
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                          <div class="uk-width-expand uk-text-small">
+                              <p class="uk-margin-remove-bottom uk-text-medium">Head Office</p>
+                              <p class="uk-margin-remove uk-text-muted">Jl. Melong IV Blok IX No.16
+                                </br>Cijerah – Cimahi Selatan
+                                </br>Cimahi 40534
+                              </p>
+                          </div>
+                          <div class="uk-width-auto">
+                            <input class="uk-radio" type="radio" name="radio-loket" checked>
+                          </div>
+                      </div>
+                    </label>
+                  </li>
+                  <li>
+                    <label>
+                      <div class="uk-grid-small uk-flex-middle" uk-grid>
+                        <div class="uk-width-expand uk-text-small">
+                              <h5 class="uk-margin-remove-bottom uk-text-medium">Sales Office</h5>
+                              <p class="uk-margin-remove uk-text-muted">Jl. Melong IV Blok IX No.16
+                                </br>Cijerah – Cimahi Selatan
+                                </br>Cimahi 40534
+                              </p>
+                          </div>
+                          <div class="uk-width-auto">
+                            <input class="uk-radio" type="radio" name="radio-loket">
+                          </div>
+                      </div>
+                    </label>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="uk-container uk-padding-remove">
+      <div class="uk-position-fixed uk-position-bottom" style="z-index: 981">
+        <div class="uk-card uk-card-small uk-card-default uk-card-body">
+          <div class="uk-container">
+            <div class="uk-grid-small uk-child-width-1-2" uk-grid>
+              <div class="">
+                <a href="transaksi_tagihan.html" class="uk-button uk-button-small uk-button-default uk-border-pill uk-width-1-1">Cancel</a>
+              </div>
+              <div class="">
+                <a href="#" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Kirim</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+</html>

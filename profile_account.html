@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>My Profile</title>
+</head>
+<body>
+  <!-- <div class="uk-offcanvas-content"> -->
+    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
+    <nav id="top-nav" uk-sticky>
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <!-- <a href="#offcanvas-nav" class="uk-navbar-toggle uk-margin-right" uk-icon="menu" uk-toggle></a> -->
+              <a class="uk-navbar-item uk-link-reset" href="https://gmiclub.com"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg></a>
+            </div>
+            <div class="uk-navbar-center">
+              <div id="page-title" class="uk-margin-remove">My Profile</div>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#">
+                    <div class="uk-inline">
+                      <div class="uk-avatar uk-background-default">
+                        DJ
+                      </div>
+                      <div class="uk-position-center">
+                        <div data-src="assets/images/avatar2.jpg" style="width:32px; height:32px" class="uk-background-cover uk-border-circle" uk-img></div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!--/////////////////////////// User Dropdown ////////////////////////////////////////-->
+                  <div uk-dropdown="" class="uk-width-medium">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                      <div class="uk-width-auto">
+                        <div class="uk-inline">
+                          <div class="uk-avatar uk-avatar-medium uk-label-active">
+                            DJ
+                          </div>
+                          <div class="uk-position-center">
+                            <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand">
+                        <p class="uk-margin-remove-bottom">Dini Jurwati Budi Rahayu</p>
+                        <p class="uk-text-meta uk-margin-remove-top">#12345, Bandung</p>
+                      </div>
+                    </div>
+                    <hr class="uk-hr uk-margin-small-top uk-margin-small-bottom">
+                    <ul class="uk-nav uk-dropdown-nav">
+                      <li><a href="sign_in.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Sign Out</a></li>
+                    </ul>
+                  </div>
+                  <!--/////////////////////////// User Dropdown End ////////////////////////////////////////-->
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="local-tabs" class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-light">
+            <li class="uk-active"><a href="#">Account</a></li>
+            <li><a href="profile_address.html">Address</a></li>
+            <li><a href="profile_bank.html">Bank</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+
+    <main id="main-content">
+      <div class="uk-container uk-padding-remove uk-margin-xlarge-bottom">
+        <div class="uk-card uk-card-body uk-background-default uk-margin-bottom uk-text-center">
+          <div class="uk-inline uk-visible-toggle">
+            <div class="uk-avatar uk-avatar-xlarge uk-label-active">
+              DJ
+            </div>
+            <div class="">
+              <div class="uk-position-center">
+                <div data-src="assets/images/avatar2.jpg" style="width:96px; height:96px" class="uk-background-cover uk-border-circle" uk-img></div>
+              </div>
+            </div>
+            <div class="uk-hidden-hover">
+              <div class="uk-overlay-primary uk-border-circle uk-position-cover js-upload" uk-form-custom>
+                <input type="file">
+                <div class="uk-position-center">
+                  <span class="uk-text-small uk-text-medium">UPLOAD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <p class="uk-text-large">Dini Jurwati Budi Rahayu</p>
+          <span class="uk-button uk-button-default uk-border-pill">Ref. Code 00014</span>
+        </div>
+
+        <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-bottom">
+          <p class="uk-text-medium">Account Info</p>
+          <form class="uk-form-stacked uk-margin-top">
+            <div class="uk-margin">
+              <label class="uk-form-label" for="account-info-form-stacked-name">Nama Lengkap</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="account-info-form-stacked-name" type="text" value="Dini Jurwati Budi Rahayu" disabled>
+              </div>
+            </div>
+            <div class="uk-margin">
+              <label class="uk-form-label" for="account-info-form-stacked-email">Email</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="account-info-form-stacked-email" type="email" value="dinijurwati@gmail.com" disabled>
+              </div>
+            </div>
+            <div class="uk-margin">
+              <label class="uk-form-label" for="account-info-form-stacked-email">Nomor Telepon</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="account-info-form-stacked-email" type="phone" value="081234567890" disabled>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="uk-card uk-card-small uk-card-body uk-background-default uk-margin-bottom uk-text-center">
+          <p class="uk-text-medium">Lampiran KTP</p>
+          <div class="js-upload">
+            <div class="uk-width-large" uk-form-custom>
+                <input type="file">
+                <div class="uk-placeholder uk-text-center">
+                  <span class="uk-icon uk-text-muted" uk-icon="icon: camera"></span>
+                </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="uk-card uk-card-small uk-card-body">
+          <div class="uk-container">
+              <div class="">
+                <a href="#" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Save</a>
+              </div>
+          </div>
+        </div>
+
+      </div>
+
+
+    </main>
+
+    <!--/////////////////////////// Bottom Navs ////////////////////////////////////////-->
+    <nav id="bottom-nav" class="uk-position-fixed uk-position-bottom">
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-tab-bottom">
+            <li>
+              <a href="index.html">
+                <span class="uk-icon uk-icon-image uk-icon-arisan"></span>
+                <p class="uk-margin-remove">Arisan</p>
+              </a>
+            </li>
+            <li>
+              <a href="transaksi_tagihan.html">
+                <span class="uk-icon uk-icon-image uk-icon-transaksi"></span>
+                <p class="uk-margin-remove">Transaksi</p>
+              </a>
+            </li>
+            <li class="uk-active">
+              <a href="#">
+                <span class="uk-icon uk-icon-image uk-icon-account"></span>
+                <p class="uk-margin-remove">Account</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/////////////////////////// Bottom Navs Ends ////////////////////////////////////////-->
+
+    <!--/////////////////////////// Offcanvas Navs ////////////////////////////////////////-->
+    <!-- <nav id="offcanvas-nav" uk-offcanvas="overlay: false">
+      <div class="uk-offcanvas-bar">
+        <a class="uk-offcanvas-close" uk-close></a>
+        <div class="uk-text-center" style="line-height: 1">
+          <a class="uk-link-reset" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg>GMI Club</a>
+        </div>
+        <ul class="uk-nav uk-nav-default uk-margin-top">
+          <li class="uk-active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Testimonies</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="sign_in.html">Member Area</a></li>
+        </ul>
+        <hr class="uk-hr">
+        <div class="uk-position-bottom" style="padding: 20px">
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="#">Back to GMI Club</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!--/////////////////////////// Offcanvas Navs Ends ////////////////////////////////////////-->
+
+  </div>
+</body>
+</html>

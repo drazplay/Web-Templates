@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <!-- UIkit CSS -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
+  <title>Arisan LM - Event</title>
+</head>
+<body>
+  <!-- <div class="uk-offcanvas-content"> -->
+    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
+    <nav id="top-nav" uk-sticky>
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container">
+          <div uk-navbar>
+            <div class="uk-navbar-left">
+              <!-- <a href="#offcanvas-nav" class="uk-navbar-toggle uk-margin-right" uk-icon="menu" uk-toggle></a> -->
+              <a class="uk-navbar-item uk-link-reset" href="https://gmiclub.com"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg></a>
+            </div>
+            <div class="uk-navbar-center">
+              <div id="page-title" class="uk-margin-remove">Arisan LM</div>
+            </div>
+            <div class="uk-navbar-right">
+              <ul class="uk-navbar-nav">
+                <li>
+                  <a href="#">
+                    <div class="uk-inline">
+                      <div class="uk-avatar uk-background-default">
+                        DJ
+                      </div>
+                      <div class="uk-position-center">
+                        <div data-src="assets/images/avatar2.jpg" style="width:32px; height:32px" class="uk-background-cover uk-border-circle" uk-img></div>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!--/////////////////////////// User Dropdown ////////////////////////////////////////-->
+                  <div uk-dropdown="" class="uk-width-medium">
+                    <div class="uk-grid-small uk-flex-middle" uk-grid>
+                      <div class="uk-width-auto">
+                        <div class="uk-inline">
+                          <div class="uk-avatar uk-avatar-medium uk-label-active">
+                            DJ
+                          </div>
+                          <div class="uk-position-center">
+                            <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="uk-width-expand">
+                        <p class="uk-margin-remove-bottom">Dini Jurwati Budi Rahayu</p>
+                        <p class="uk-text-meta uk-margin-remove-top">#12345, Bandung</p>
+                      </div>
+                    </div>
+                    <hr class="uk-hr uk-margin-small-top uk-margin-small-bottom">
+                    <ul class="uk-nav uk-dropdown-nav">
+                      <li><a href="profile_account.html"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Edit Profile</a></li>
+                      <li><a href="sign_in.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Sign Out</a></li>
+                    </ul>
+                  </div>
+                  <!--/////////////////////////// User Dropdown End ////////////////////////////////////////-->
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="local-tabs" class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-light">
+            <li><a href="index.html">Info</a></li>
+            <li class="uk-active"><a href="#">Event</a></li>
+            <li><a href="arisan_status.html">Status</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+
+
+    <main id="main-content">
+      <div class="uk-container uk-padding-remove uk-margin-xlarge-bottom">
+        <div class="uk-card uk-card-small uk-background-default">
+          <div class="uk-card-media-top uk-inline">
+            <img src="assets/images/event.jpg" alt="">
+          </div>
+          <div class="uk-card-body">
+            <div class="uk-flex uk-flex-between">
+              <div class="">
+                <h5 class="uk-text-medium uk-margin-remove">Event Arisan LM</h5>
+                <p class="uk-text-meta uk-margin-remove">Periode Juli 2018</p>
+              </div>
+              <div class="">
+                <a href="" class="uk-icon-button uk-button-secondary" uk-icon="forward" uk-tooltip="Location"></a>
+              </div>
+            </div>
+            <h4 class="uk-text-bold uk-margin uk-text-primary">Healthy Life Ala GMI Club</h4>
+            <h5 class="uk-margin-remove">Fox Harris City Center</h5>
+            <p class="uk-text-small uk-margin-remove-top uk-margin-small-bottom">Jl. Jawa No. 3 Bandung</p>
+            <p class="uk-text-small uk-margin-remove">Sabtu, 21 Juli 2018</p>
+            <p class="uk-text-small uk-margin-remove-top uk-margin-small-bottom">09:00 - 15:00 PM</p>
+            <p class="uk-margin-remove"><span class="uk-label uk-background-secondary uk-label-small">Dresscode Sporty</span></p>
+            <p class="uk-margin-remove-top uk-margin-bottom"><span class="uk-label uk-background-secondary uk-label-small">Free Tickets Only for 125 members</span></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--/////////////////////////// Bottom Navs ////////////////////////////////////////-->
+    <nav id="bottom-nav" class="uk-position-fixed uk-position-bottom">
+      <div class="uk-navbar-container uk-navbar-transparent">
+        <div class="uk-container uk-padding-remove">
+          <ul class="uk-tab uk-tab-bottom">
+            <li class="uk-active">
+              <a href="#">
+                <span class="uk-icon uk-icon-image uk-icon-arisan"></span>
+                <p class="uk-margin-remove">Arisan</p>
+              </a>
+            </li>
+            <li>
+              <a href="transaksi_tagihan.html">
+                <span class="uk-icon uk-icon-image uk-icon-transaksi"></span>
+                <p class="uk-margin-remove">Transaksi</p>
+              </a>
+            </li>
+            <li>
+              <a href="profile_account.html">
+                <span class="uk-icon uk-icon-image uk-icon-account"></span>
+                <p class="uk-margin-remove">Account</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--/////////////////////////// Bottom Navs Ends ////////////////////////////////////////-->
+
+    <!--/////////////////////////// Offcanvas Navs ////////////////////////////////////////-->
+    <!-- <nav id="offcanvas-nav" uk-offcanvas="overlay: false">
+      <div class="uk-offcanvas-bar">
+        <a class="uk-offcanvas-close" uk-close></a>
+        <div class="uk-text-center" style="line-height: 1">
+          <a class="uk-link-reset" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg>GMI Club</a>
+        </div>
+        <ul class="uk-nav uk-nav-default uk-margin-top">
+          <li class="uk-active"><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Testimonies</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Contacts</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="sign_in.html">Member Area</a></li>
+        </ul>
+        <hr class="uk-hr">
+        <div class="uk-position-bottom" style="padding: 20px">
+          <ul class="uk-nav uk-nav-default">
+            <li><a href="#">Back to GMI Club</a></li>
+            <li><a href="#">Sign Out</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+    <!--/////////////////////////// Offcanvas Navs Ends ////////////////////////////////////////-->
+
+  </div>
+</body>
+</html>
