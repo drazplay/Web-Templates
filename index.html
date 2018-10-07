@@ -1,232 +1,80 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sign In</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- UIkit CSS -->
-  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/css/uikit.min.css" />
   <link rel="stylesheet" href="css/app.css" />
+
   <!-- UIkit JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.0.0-rc.17/js/uikit-icons.min.js"></script>
-  <title>Arisan LM - Info</title>
 </head>
-<body>
-  <!-- <div class="uk-offcanvas-content"> -->
-    <!--/////////////////////////// Top Navigations ////////////////////////////////////////-->
-    <nav id="top-nav" uk-sticky>
-      <div class="uk-navbar-container uk-navbar-transparent">
-        <div class="uk-container">
-          <div uk-navbar>
-            <div class="uk-navbar-left">
-              <!-- <a href="#offcanvas-nav" class="uk-navbar-toggle uk-margin-right" uk-icon="menu" uk-toggle></a> -->
-              <a class="uk-navbar-item uk-link-reset" href="https://gmiclub.com"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg></a>
-            </div>
-            <div class="uk-navbar-center">
-              <div id="page-title" class="uk-margin-remove">Arisan LM</div>
-            </div>
-            <div class="uk-navbar-right">
-              <ul class="uk-navbar-nav">
-                <li>
-                  <a href="#">
-                    <div class="uk-inline">
-                      <div class="uk-avatar uk-background-default">
-                        DJ
-                      </div>
-                      <div class="uk-position-center">
-                        <div data-src="assets/images/avatar2.jpg" style="width:32px; height:32px" class="uk-background-cover uk-border-circle" uk-img></div>
-                      </div>
-                    </div>
-                  </a>
+<body id="sign-in">
 
-                  <!--/////////////////////////// User Dropdown ////////////////////////////////////////-->
-                  <div uk-dropdown="" class="uk-width-medium">
-                    <div class="uk-grid-small uk-flex-middle" uk-grid>
-                      <div class="uk-width-auto">
-                        <div class="uk-inline">
-                          <div class="uk-avatar uk-avatar-medium uk-label-active">
-                            DJ
-                          </div>
-                          <div class="uk-position-center">
-                            <div data-src="assets/images/avatar2.jpg" style="width:40px; height:40px" class="uk-background-cover uk-border-circle" uk-img></div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="uk-width-expand">
-                        <p class="uk-margin-remove-bottom">Dini Jurwati Budi Rahayu</p>
-                        <p class="uk-text-meta uk-margin-remove-top">#12345, Bandung</p>
-                      </div>
-                    </div>
-                    <hr class="uk-hr uk-margin-small-top uk-margin-small-bottom">
-                    <ul class="uk-nav uk-dropdown-nav">
-                      <li><a href="profile_account.html"><span class="uk-margin-small-right" uk-icon="icon: user"></span> Edit Profile</a></li>
-                      <li><a href="sign_in.html"><span class="uk-margin-small-right" uk-icon="icon: sign-out"></span> Sign Out</a></li>
-                    </ul>
-                  </div>
-                  <!--/////////////////////////// User Dropdown End ////////////////////////////////////////-->
-
-                </li>
-              </ul>
+      <!--/////////////////////////// Global Navbar ////////////////////////////////////////-->
+      <nav id="global-navbar" class="global-navbar" uk-sticky>
+        <div class="uk-navbar-container uk-navbar-transparent">
+          <div class="uk-container">
+            <div uk-navbar>
+              <div class="uk-navbar-left">
+                <ul class="uk-navbar-nav">
+                    <li>
+                        <a href="home.html">
+                            <span class="uk-icon uk-margin-small-right" uk-icon="icon: arrow-left; ratio: 1.5"></span>
+                            <span class="uk-visible@m">Back to GMI Club</span>
+                        </a>
+                    </li>
+                </ul>
+              </div>
+              <div class="uk-navbar-center">
+                <a class="uk-navbar-item uk-logo" href="#"><img src="assets/images/icons/icon_logo.svg" class="uk-margin-small-right" width="32" height="32" uk-svg> GMI Club</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div id="local-tabs" class="uk-navbar-container uk-navbar-transparent">
-        <div class="uk-container uk-padding-remove">
-          <ul class="uk-tab uk-light">
-            <li class="uk-active"><a href="#">Info</a></li>
-            <li><a href="arisan_event.html">Event</a></li>
-            <li><a href="arisan_status.html">Status</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
+      </nav>
+      <!--/////////////////////////// Global Navbar End ////////////////////////////////////////-->
 
-    <!--/////////////////////////// Top Navigations Ends ////////////////////////////////////////-->
+      <!--/////////////////////////// Main Page ////////////////////////////////////////-->
+      <main class="uk-section">
+        <div class="uk-container uk-width-large uk-padding">
+          <h3 class="uk-margin-remove uk-text-medium">Sign in</h3>
+          <span>Please sign in to continue</span>
 
-    <main id="main-content">
-      <div class="uk-container uk-padding-remove">
-        <header class="content-header">
-          <div class="uk-card uk-card-small uk-card-body uk-card-default uk-box-shadow-xsmall">
-            <h3 class="uk-content-header-title uk-margin-remove">Info Cicilan Arisan</h3>
-            <p class="uk-content-header-subtitle uk-margin-remove">Periode Oktober 2018</p>
-          </div>
-        </header>
-        <div class="uk-alert-primary uk-margin-remove" uk-alert>
-          <p class="uk-margin-remove">Periode Arisan LM bulan Mei 2018 sudah berakhir.</p>
-          <p class="uk-margin-remove">Silahkan mendaftar Arisan LM untuk periode selanjutnya.</p>
-        </div>
-        <ul id="hover-list" class="uk-list uk-margin-remove">
-            <li class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2">
-                        <span class="uk-label-gram">5 gram</span>
-                    </div>
-                    <div class="uk-width-1-5 uk-text-right">
-                      <span class="">Rp.</span>
-                    </div>
-                    <div class="uk-width-expand uk-text-right">
-                      <span class="uk-text-right">315,000</span>
-                    </div>
-                </div>
-              </li>
-              <li class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2">
-                        <span class="uk-label-gram">10 gram</span>
-                    </div>
-                    <div class="uk-width-1-5 uk-text-right">
-                      <span class="">Rp.</span>
-                    </div>
-                    <div class="uk-width-expand uk-text-right">
-                      <span class="uk-text-right">626,000</span>
-                    </div>
-                </div>
-              </li>
-              <li class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2">
-                        <span class="uk-label-gram">25 gram</span>
-                    </div>
-                    <div class="uk-width-1-5 uk-text-right">
-                      <span class="">Rp.</span>
-                    </div>
-                    <div class="uk-width-expand uk-text-right">
-                      <span class="uk-text-right">1,550,000</span>
-                    </div>
-                </div>
-              </li>
-              <li class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2">
-                        <span class="uk-label-gram">50 gram</span>
-                    </div>
-                    <div class="uk-width-1-5 uk-text-right">
-                      <span class="">Rp.</span>
-                    </div>
-                    <div class="uk-width-expand uk-text-right">
-                      <span class="uk-text-right">3,080,000</span>
-                    </div>
-                </div>
-              </li>
-              <li class="uk-card uk-card-small uk-card-hover uk-card-body uk-background-default">
-                <div class="uk-grid-small uk-flex-middle" uk-grid>
-                    <div class="uk-width-1-2">
-                        <span class="uk-label-gram">100 gram</span>
-                    </div>
-                    <div class="uk-width-1-5 uk-text-right">
-                      <span class="">Rp.</span>
-                    </div>
-                    <div class="uk-width-expand uk-text-right">
-                      <span class="uk-text-right">6,090,000</span>
-                    </div>
-                </div>
-              </li>
-          </ul>
-      </div>
-      <div class="uk-container uk-margin-top uk-margin-xlarge-bottom">
-        <a href="arisan_daftar.html" class="uk-button uk-button-primary uk-border-pill uk-width-1-1">Daftar Arisan LM</a>
-      </div>
-    </main>
+          <form class="uk-form-stacked uk-margin-medium-top">
+            <div class="uk-margin">
+              <label class="uk-form-label" for="sign-in-form-stacked-email">Email</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="sign-in-form-stacked-email" type="email" placeholder="Enter your email address">
+              </div>
+            </div>
 
-    <!--/////////////////////////// Bottom Navs ////////////////////////////////////////-->
-    <nav id="bottom-nav" class="uk-position-fixed uk-position-bottom">
-      <div class="uk-navbar-container uk-navbar-transparent">
-        <div class="uk-container uk-padding-remove">
-          <ul class="uk-tab uk-tab-bottom">
-            <li class="uk-active">
-              <a href="#">
-                <span class="uk-icon uk-icon-image uk-icon-arisan"></span>
-                <p class="uk-margin-remove">Arisan</p>
-              </a>
-            </li>
-            <li>
-              <a href="transaksi_tagihan.html">
-                <span class="uk-icon uk-icon-image uk-icon-transaksi"></span>
-                <p class="uk-margin-remove">Transaksi</p>
-              </a>
-            </li>
-            <li>
-              <a href="profile_account.html">
-                <span class="uk-icon uk-icon-image uk-icon-account"></span>
-                <p class="uk-margin-remove">Account</p>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!--/////////////////////////// Bottom Navs Ends ////////////////////////////////////////-->
+            <div class="uk-margin">
+              <label class="uk-form-label" for="sign-in-form-stacked-password">Password</label>
+              <div class="uk-form-controls">
+                <input class="uk-input" id="sign-in-form-stacked-password" type="password" placeholder="Enter your password">
+              </div>
+            </div>
 
-    <!--/////////////////////////// Offcanvas Navs ////////////////////////////////////////-->
-    <!-- <nav id="offcanvas-nav" uk-offcanvas="overlay: false">
-      <div class="uk-offcanvas-bar">
-        <a class="uk-offcanvas-close" uk-close></a>
-        <div class="uk-text-center" style="line-height: 1">
-          <a class="uk-link-reset" href="#"><img src="assets/images/icons/icon_logo_light.svg" class="uk-margin-small-right" width="32" height="32" uk-svg>GMI Club</a>
-        </div>
-        <ul class="uk-nav uk-nav-default uk-margin-top">
-          <li class="uk-active"><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Product</a></li>
-          <li><a href="#">Testimonies</a></li>
-          <li><a href="#">Articles</a></li>
-          <li><a href="#">Contacts</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="sign_in.html">Member Area</a></li>
-        </ul>
-        <hr class="uk-hr">
-        <div class="uk-position-bottom" style="padding: 20px">
-          <ul class="uk-nav uk-nav-default">
-            <li><a href="#">Back to GMI Club</a></li>
-            <li><a href="#">Sign Out</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav> -->
-    <!--/////////////////////////// Offcanvas Navs Ends ////////////////////////////////////////-->
+            <div class="uk-margin">
+      				<label class="uk-form-label"><input class="uk-checkbox uk-margin-small-right" type="checkbox">Remember me</label>
+      			</div>
 
-  </div>
+            <div class="uk-margin-medium">
+              <a class="uk-button uk-button-primary uk-width-1-1" href="index.html" type="submit">Sign in</a>
+            </div>
+
+            <div class="uk-margin-medium uk-text-center">
+              <a class="uk-link-reset" href="forgot_password.html">Forgot your password ?</a>
+            </div>
+          </form>
+        </div>
+
+      </main>
+      <!--/////////////////////////// Main Page End ////////////////////////////////////////-->
+
 </body>
 </html>
